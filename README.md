@@ -72,7 +72,7 @@ comments: "I was VERY excited to come here after seeing and hearing so many good
 }
 ]
 },
-
+```
 ## Project built with:
 
 React, Nextjs and Scss on the front end.
