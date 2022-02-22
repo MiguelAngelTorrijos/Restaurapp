@@ -16,14 +16,30 @@ Here is an example:
 npm install
 yarn install
 ```
-for run the proyect front
+To start the frontend in production mode run
+```bash
+npm run build
+npm run start
+```
+in case you want to start in dev mode with 
+
+```bash
+npm run dev
+```
+To start the server copy the .env.example
+```bash
+cp .env.example .env
+```
+and then
 
 ```bash
 npm run start
-yarn run start
 ```
+in case you want to start the server in dev mode
 
-
+```bash
+npm run dev
+```
 
 ## User data 🙍‍♂️
 
