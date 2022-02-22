@@ -14,7 +14,16 @@ Here is an example:
 
 ```bash
 npm install
+yarn install
 ```
+for run the proyect front
+
+```bash
+npm run start
+yarn run start
+```
+
+
 
 ## User data 🙍‍♂️
 
