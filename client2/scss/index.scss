@@ -1,0 +1,12 @@
+@import './colors.scss';
+
+//Pages
+@import '../pages/restaurant/restaurants.scss';
+@import '../pages/login/login.scss';
+@import '../pages/restaurant/restaurant.scss';
+
+//Components
+@import '../components/Navbar/navbar';
+@import '../components/Footer/footer.scss';
+@import '../components/FormNewRestaurant/FormNewRestaurant.scss';
+@import '../components/Loading/loading.scss';

@@ -1,0 +1,63 @@
+.clock-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.173);
+}
+.clock-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  position: relative;
+  height: 105px;
+  width: 105px;
+  border: 5px solid $primary;
+  border-radius: 400px;
+}
+
+.clock .hand {
+  position: absolute;
+  left: 42%;
+  bottom: 50%;
+  transform: translate(-50%);
+  transform-origin: bottom;
+}
+
+.clock .hand.hour {
+  width: 15px;
+  height: 50%;
+  animation: rotate 5s linear infinite;
+  background-image: url('../../img/cuchara.svg');
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}
+
+.clock .hand.minute {
+  width: 15px;
+  height: 50%;
+  z-index: 10;
+  animation: rotate 2s linear infinite;
+
+  background-image: url('../../img/tenedor.svg');
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  color: $primary;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}

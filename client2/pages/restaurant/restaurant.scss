@@ -1,0 +1,230 @@
+.restaurant {
+  margin: 0;
+  padding: 0;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    &__title {
+      color: $white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      font-size: 25px;
+      margin-top: 60px;
+      h1 {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 540px) {
+        margin-top: 160px;
+        font-size: 17px;
+        margin-bottom: 12px;
+      }
+    }
+
+    p {
+      color: $white;
+      z-index: 1;
+      margin: 0;
+      padding: 0;
+    }
+    &__cuisine {
+      font-size: 30px;
+      @media (max-width: 540px) {
+        font-size: 28px;
+      }
+    }
+    &__address-restaurant {
+      z-index: 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      @media (max-width: 540px) {
+        flex-direction: column;
+        align-items: center;
+        &__separator {
+          display: none;
+        }
+      }
+      p {
+        margin: 20px 8px 0 8px;
+        @media (max-width: 540px) {
+          margin: 8px 0 0 0;
+        }
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px 0 80px 0;
+
+    @media (max-width: 870px) {
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
+    }
+    &__reviews {
+      margin-top: 60px;
+      width: 40%;
+      @media (max-width: 870px) {
+        width: 90%;
+      }
+      &__grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      &__name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 3px;
+        margin-top: 40px;
+        color: rgba(0, 0, 0, 0.714);
+      }
+
+      &__rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+
+        margin-top: 40px;
+        p {
+          margin-right: 6px;
+          color: rgba(0, 0, 0, 0.714);
+        }
+      }
+      &__date {
+        font-size: 15px;
+        margin-top: 0;
+        color: rgba(0, 0, 0, 0.276);
+      }
+      &__comments {
+        font-size: 14px;
+        margin-top: 0;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.502);
+      }
+      &__hr {
+        border-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin-top: 40px;
+      }
+    }
+    &__hours {
+      margin-top: 60px;
+      width: 35%;
+      @media (max-width: 870px) {
+        width: 80%;
+        align-items: center;
+      }
+      ul {
+        padding: 0;
+        margin-bottom: 180px;
+      }
+      &__subtitle {
+        color: $primary;
+        text-align: center;
+      }
+      &__btns {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width: 870px) {
+          margin-right: 0;
+          margin: 130px 10px 90px 10px;
+          align-items: center;
+        }
+
+        @media (max-width: 640px) {
+          justify-content: center;
+        }
+        button {
+          border: none;
+          color: $white;
+          border: 2px solid $primary-dark;
+          background-color: $primary;
+          font-size: 16px;
+          padding: 10px 70px;
+          transition: 0.3;
+          cursor: pointer;
+          margin-left: 5px;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.29);
+            color: $primary-dark;
+          }
+          @media (max-width: 870px) {
+            padding: 10px 40px;
+          }
+        }
+        &__link {
+          color: $primary-dark;
+          border: 2px solid $primary-dark;
+          padding: 10px 70px;
+          transition: 0.3;
+          cursor: pointer;
+          font-size: 16px;
+          margin-right: 5px;
+          &:hover {
+            background-color: $primary;
+            color: $white;
+          }
+          @media (max-width: 870px) {
+            padding: 10px 40px;
+          }
+        }
+      }
+      &__grid {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.091);
+
+        &__name {
+          margin-right: 40px;
+          margin-bottom: 15px;
+          margin: 20px 15px 20px 0;
+          width: 30%;
+          padding-left: 5px;
+          color: $primary;
+        }
+
+        &__hour {
+          width: 70%;
+          margin-right: 40px;
+          margin-bottom: 15px;
+          margin: 20px 15px 20px 0;
+          text-align: center;
+          color: rgba(0, 0, 0, 0.619);
+        }
+
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
