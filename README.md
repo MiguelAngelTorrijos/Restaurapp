@@ -23,7 +23,7 @@ user: admin
 password: 123456
 ```
 
-## Caution 👁️
+## Caution  👁️
 
 Restaurant and user data are persisted in the backend itself in the mocks folder.
 Note, that if you delete all the restaurants you will not be able to recover them.
